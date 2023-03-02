@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="res.css">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+    <!-- Since we using google maps -->
+    <!-- find a location of every res in the list -->
+    <!-- most likely going to use js to add the data from a text -->
+    <body>
+        <div>
+            <div id="navBar">
+                <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:rgb(219, 213, 213);
+                margin-left: 1%;">GH Accredited Reses</h1>
+                <ul id="nav">
+                    <!-- Menu can show few most popula reses and other stuff -->
+                    <li><a class="active" href="index.html">Menu</a></li>
+                    <li><a href="residences.html">All Residences</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="welcome">
+                <p class="welc-txt">Welcome</p>
+                <p class="annotate">This is the place to be.</p>
+            </div>
+            <br>
+            <div class="gh">
+                <!-- styling pictures and animating them, with css -->
+                <p style="text-align: center; font-size: larger;font-weight: bold;">Rhodes University</p>
+                <img src="Images/img4.jpg" style="z-index: -1;">
+                <p style="text-align: center; font-size: larger;font-weight: bold;">Grahamstown (Makhanda)</p>
+                <img src="Images/img3.jpg" style="z-index: -1;">    
+            </div>
+
+            <div id="pic1" class="some-reses" style="position:absolute;">
+                <p style="color:white; font-size: large;text-align: center;">The Grandres</p>
+                <img src="Images/img6.jpg"> 
+                <p style="color:white;text-align: center;">The Grandres, Provides safe and reliable accomodation</p>
+            </div>
+            <div id="pic2" class="some-reses" style="position:absolute;">
+                <p style="color:white; font-size: large;text-align: center;">Our Reses</p>
+                <img src="Images/img5.jpg"> 
+                <p style="color:white;text-align: center;">The Grandres, Provides safe and reliable accomodation</p>
+            </div>
+            <div id="pic3" class="some-reses" style="position:absolute;">
+                <p style="color:white; font-size: large;text-align: center;">3 Bowlers Close</p>
+                <img src="Images/img3.jpg"> 
+                <p style="color:white;text-align: center;">3 Bowlers Close, Provides safe and reliable accomodation</p>
+            </div>
+             
+            <p style="text-align: center;color: azure;margin-top: 55%;"><a href="residences.html" >All Reses</a></p>
+
+            <!-- <div class="map">
+                <form style="position: relative;">
+                   <input type="search" placeholder="search area.."> 
+                </form> 
+
+                <div class="show-map">
+                    <p>show our map</p>
+                </div>
+            </div> -->
+        <script src="res.js"></script>
+        <script src="menu.js"></script>
+    </body>
+</html>

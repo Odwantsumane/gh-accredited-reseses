@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="res.css">
+    </head>
+
+    <body>
+        <div>
+            <div id="navBar">
+                <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:rgb(219, 213, 213);
+                margin-left: 1%;">GH Accredited Reses</h1>
+                <ul id="nav">
+                    <!-- Menu can show few most popula reses and other stuff -->
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="residences.html">All Residences</a></li>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                
+                </ul>
+                <!-- <input id="search" type="search" placeholder="search.."> -->
+            </div>
+            <br><br><br><br><br><br><br><br>
+        <div class="about">
+            <div class="contact_us">
+                <h2 style="text-align:center;">First Contact Us</h2>
+                <form class="contact-form">
+                    <input id="name" type="text" name="name" placeholder="Please enter your name.." required>
+                    <br>
+                    <input id="em" type="email" name="email" placeholder="Please enter your email.." required>
+                    <br>
+                    <textarea id="mess" rows="4" placeholder="Type your message here..." required></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+            <p style="background-color: rgb(245, 248, 250);position: absolute;
+            top:60%"><b>Note:</b> If any information we have provided is incorrect you can email us and help us fix it</p>
+            <div class="my-info">
+                <h2 style="text-align:center;">About Us</h2>
+                <p style="text-align:center;">My Name is Odwa Ntsumane</p>
+                <p style="text-align:center;">I am 22 Years Old</p>
+                <p style="text-align:center;">Obtained My Bachelor of science degree</p>
+                <p style="text-align:center;">At Rhodes University</p>
+                <p style="text-align:center;">BSc - Computer Sciences and Chemistry</p>
+                <p style="text-align:center;">Graduating (2023)</p>
+
+                <!-- <img src="Images/img4.jpg" style="position:absolute;height: 300px;width: 300px;right: 0;"> -->
+            </div>
+            
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "odwantsumane@gmail.com",
+                Password : "D0ACBE6655D8F922BF8A52CFDD9E2FB529EB",
+                To : 'yungpysh01@gmail.com', //unofficial account 
+                From : document.getElementById("em").value, //will be usersemail, no email verification for now
+                Subject : "GH residences Websites suggestion",
+                Body : document.getElementById("mess") //find out how to record a video, so i can send it here, also the location
+            }).then(
+            message => alert(message)
+            ); 
+        }
+    </script>
+    </body>
+</html>
